@@ -5,7 +5,7 @@ sudo apt install linux-headers-$(uname -r)
 sudo apt update
 sudo apt upgrade
 sudo apt install xorg
-sudo apt install lightdm --n-install-recommends
+sudo apt install lightdm --no-install-recommends
 sudo apt install pcmanfm --no-install-recommends
 sudo apt install ibfm-modules lxinput lxrandr arandr mlocate mousepad sakura gtk2-engines
 Sudo apt install gtk2-engines-murrine --no-install-recommends
