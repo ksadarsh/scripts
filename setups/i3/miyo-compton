@@ -1,0 +1,7 @@
+#!/bin/sh
+yad --title="Compton" --width=230 --text-align=center --center --buttons-layout="center" --text="
+Turn Compton On or Off.
+" \
+--button="On":"compton" \
+--button="Off":"killall compton" \
+--button="Close"

@@ -1,0 +1,17 @@
+#!/bin/bash
+
+yad --form --center --undecorated --align=left --width=165 --borders=10 --height=320 --title="Miyo Accessories" --skip-taskbar --close-on-unfocus --columns=3 \
+--image=/usr/share/miyolinux/miyo-accessories.png --image-on-top \
+--field="  Calendar!calendar!Calendar":fbtn "miyo-calendar" \
+--field="  Conky Controls!utilities-system-monitor!Conky":fbtn "miyo-conky" \
+--field="  Compton Controls!compton!Compton":fbtn "miyo-compton" \
+--field="  Touchpad Controls!touchpad!Touchpad":fbtn "miyo-touchpad" \
+--field="  PCManFM (as root)!system-file-manager!PCManFM (as root)":fbtn "gksu pcmanfm" \
+--field="  LXAppearance (as root)!preferences-desktop-theme!Customize the Look and Feel of the root account":fbtn "gksu lxappearance" \
+--field="  Live Keyboard Layout!keyboard!Temporarily change the keyboard layout":fbtn "miyo-keyboard" \
+--field="  Default Keybindings!gnome-settings-keybindings!View the default keybindings":fbtn "leafpad $HOME/.config/i3/keybinds" \
+--field="  i3 config!text-editor!Edit the main configuration file":fbtn "leafpad $HOME/.config/i3/config" \
+--field="  i3blocks!text-editor!Edit the i3blocks file":fbtn "gksu leafpad /etc/i3blocks.conf" \
+--field="  .conkyrc!text-editor!Edit the .conkyrc file":fbtn "leafpad $HOME/.conkyrc" \
+--field="  compton.conf!text-editor!Edit the compton file":fbtn "leafpad $HOME/.config/compton.conf" \
+--button=gtk-cancel --buttons-layout=center \

@@ -1,0 +1,2 @@
+#!/bin/sh
+yad --calendar --width=400 --borders=5 --button=gtk-close --posx=-1 --posy=-23 --undecorated --on-top

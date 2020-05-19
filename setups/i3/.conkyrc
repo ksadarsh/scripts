@@ -1,0 +1,78 @@
+conky.config = {
+alignment="top_right",
+background="no",
+border_margin=5,
+border_width=5,
+default_color="A4A5A9",
+double_buffer=true,
+draw_borders=false,
+draw_outline=false,
+draw_shades=false,
+gap_x=20,
+gap_y=10,
+minimum_width = 275, minimum_height = 710,
+maximum_width = 275,
+no_buffers=true,
+override_utf8_locale=true,
+own_window=true,
+own_window_title=conky,
+own_window_hints="undecorated,below,sticky,skip_taskbar,skip_pager",
+own_window_transparent=true,
+own_window_type="override",
+own_window_color= '000000',
+text_buffer_size="1000",
+total_run_times=0,
+update_interval=1,
+uppercase=false,
+short_units=true,
+use_xft=true,
+xftalpha=1,
+font="Ubuntu:pixelsize=13",
+}
+
+conky.text=[[
+${image /usr/share/backgrounds/wall89.png -p 100,625 -s 75x75 -f 300}
+${voffset 8}${font Ubuntu:pixelsize=40}${time %H:%M}${font}${voffset -21}${offset 5}${font Ubuntu:pixelsize=24}${color #3B5C98}${time %d}${color}${voffset -5}${offset 5}${font Ubuntu:pixelsize=14}${time %B %Y}${font}${voffset 13}${offset 24}${color #3B5C98}${font Ubuntu:pixelsize=18}${offset -118}${time %A}${color}${font}
+${font sans-serif:bold:size=10}SYSTEM ${hr 2}
+${alignc}${execi 999999 lsb_release -ds}
+Sesssion:${alignr}${execi 60000 env | grep '^DESKTOP_SESSION' | cut -d'=' -f2-}
+${font sans-serif:normal:size=8}$sysname $alignr $machine
+Kernel:${alignr}${execi 3600 uname -r}
+Host:$alignr$nodename
+Uptime:$alignr$uptime
+Temperature ${alignr}${acpitemp}C
+CPU ${alignr}${cpu cpu1}%
+RAM ${alignr}$mem / $memmax ($memperc%)
+
+File System${goto 130}Used${alignr}Size
+${goto 130}${fs_used /}${alignr}${fs_size /}
+${hr 2}
+Basic Keyboard Shortcuts:${alignr}MOD = SUPER key
+
+${alignc}Menus
+${hr 2}
+MOD + d .......................................................... ${alignr}dmenu
+MOD + m ......................................................... ${alignr}PMenu
+${alignc}General
+${hr 2}
+MOD + b ......................................... ${alignr}x-www-browser
+MOD + Ctrl + p......................................... ${alignr}Synaptic
+MOD + Shift + s......................................... ${alignr}Rofi
+MOD + z......................................... ${alignr}PCManFm as Root 
+MOD + p .................................................... ${alignr}PCManFM
+MOD + Return / Enter ............................. ${alignr}Terminal
+MOD + CTRL + a ........................ ${alignr}Miyo Accessories
+PRTSC ...................................................... ${alignr}Screenshot
+${alignc}i3
+${hr 2}
+MOD + 1 - 0 .................................. ${alignr}Switch Desktops
+MOD + Shift + q .............................. ${alignr}Close Window
+MOD + Shift + c ........... ${alignr}Reload i3 configuration
+MOD + Shift + r ........................................ ${alignr}Restart i3
+MOD + CTRL + k ....................... ${alignr}Default Keybinds
+${alignc}Session
+${hr 2}
+MOD + CTRL + e ...................................... ${alignr}Exit Menu
+MOD + CTRL + x .................................. ${alignr}Screen Lock
+]]
+
