@@ -48,7 +48,7 @@ super + F10
 
 #Rofi Fullscreen
 super + F11
-    rofi -show run -fullscreen
+    rofi-neon
 
 #Rofi
 super + F12
@@ -72,11 +72,11 @@ super + c
 
 #Htop
 super + h
-    st 'htop task manager' -e htop
+    sakura 'htop task manager' -e htop
 
 #Oblogout
 super + x
-    oblogout
+    miyo-exit
 
 #Oblogout
 super + Pause
@@ -84,7 +84,7 @@ super + Pause
 
 #Oblogout
 ctrl + alt + Delete
-   /usr/bin/miyo-exit
+  miyo-exit
 
 #Rofi theme selector
 super + r
@@ -92,7 +92,7 @@ super + r
 
 #st
 super + t
-    st
+    sakura
 
 #Pavucontrol
 super + v
@@ -104,7 +104,7 @@ super + m
 
 #Termite
 super + Return
-    termite
+    sakura
 
 #Xkill
 super + Escape
@@ -277,7 +277,7 @@ alt + F2
 
 #Xfce4-appfinder
 alt + F3
-    xfce4-appfinder
+    jgmenu_run
 
 
 #################################################################
@@ -336,7 +336,7 @@ ctrl + shift + Print
 
 #xfce4-terminal dropdown
 F12
-    xfce4-terminal --drop-down
+    sakura --drop-down
 
 
 #################################################################
