@@ -6,16 +6,20 @@ function run {
     $@&
   fi
 }
-
+nitrogen --restore &
 $HOME/.config/polybar/launch.sh &
-feh --bg-scale ~/.config/bspwm/wall.png &
-xsetroot -cursor_name left_ptr &
 run sxhkd -c ~/.config/bspwm/sxhkd/sxhkdrc &
+sleep 2 &
+stalonetray --dockapp-mode simple &
+cmst -m -i Papirus &
+run volumeicon-alsa &
+cbatticon &
+xsetroot -cursor_name left_ptr &
 conky -c $HOME/.config/bspwm/system-overview &
 numlockx on &
-compton --config $HOME/.config/bspwm/compton.conf &
+compton -cGb &
 lxpolkit &
-run volumeicon &
+
 /usr/share/miyolinux/miyolinux.wav &
 #Find out your monitor name with xrandr or arandr (save and you get this line)
 #xrandr --output VGA-1 --primary --mode 1360x768 --pos 0x0 --rotate normal
