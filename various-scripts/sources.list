@@ -1,0 +1,12 @@
+deb http://deb.devuan.org/merged beowulf main non-free contrib
+# deb-src http://deb.devuan.org/merged beowulf main non-free contrib
+
+deb http://deb.devuan.org/merged beowulf-security main non-free contrib
+# deb-src http://deb.devuan.org/merged beowulf-security main non-free contrib
+
+deb http://deb.devuan.org/merged beowulf-updates main non-free contrib
+# deb-src http://deb.devuan.org/merged beowulf-updates main non-free contrib
+
+# Beowulf Backports
+deb http://deb.devuan.org/merged beowulf-backports main non-free contrib
+# deb-src http://deb.devuan.org/merged beowulf-backports main non-free contrib

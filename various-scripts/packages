@@ -1,0 +1,52 @@
+#!/usr/bin/env bash
+
+sudo apt install firmware-linux xorg
+
+sudo apt install lightdm --no-install-recommends
+
+sudo apt install bspwm sxhkd xdo lemonbar
+
+sudo apt install pcmanfm gtk2-engines-murrine --no-install-recommends
+
+sudo apt install curl wget yad synaptic gdebi
+
+sudo apt install gvfs gvfs-backends libfm-modules eject gnome-themes-standard mlocate sakura geany geany-plugins
+
+sudo apt install gtk2-engines dmz-cursor-theme lxappearance lxinput lxrandr ntp ntpdate zip unzip tar
+
+sudo apt install gparted gufw bleachbit nitrogen feh cbatticon rofi dunst dmenu volumeicon-alsa compton conky alsa-utils
+
+sudo apt install pavucontrol ttf-dejavu fonts-ubuntu xbacklight scrot acpid locales-all autoconf cmake wmctrl libgtk3-perl
+
+sudo apt install psmisc make xserver-xorg-input-synaptics papirus-icon-theme wicd
+
+sudo apt install atmel-firmware b43-fwcutter bluez-firmware dahdi-firmware-nonfree firmware-ath9k-htc firmware-atheros firmware-b43-installer firmware-b43legacy-installer firmware-bnx2 firmware-bnx2x firmware-brcm80211 firmware-cavium firmware-intelwimax firmware-iwlwifi firmware-libertas firmware-myricom firmware-netronome firmware-netxen firmware-qlogic firmware-ralink firmware-realtek firmware-ti-connectivity firmware-zd1211 iw openssh-client pcmciautils rfkill
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+_____________________________________________________
+
+Wireless firmware...
+_____________________________________________________
+
+
+
+
+
+
+
+
+
