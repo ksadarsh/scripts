@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+su
+cd /usr/local/bin && wget -O inxi smxi.org/inxi && chmod +x inxi
